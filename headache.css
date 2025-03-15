@@ -98,7 +98,7 @@ ul{
 li{
     margin-bottom: 5px;
 }
-/responsive design/
+*/responsive design/
 @media(max-widtth: 768px) {
     .profile-box {
            flex-direction: column;
