@@ -1,94 +1,95 @@
 *{
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif ;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background: rgb(238, 232, 232);
+    background-color: rgb(203, 241, 229);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
 }
+
 .container{
     width: 100%;
     max-width: 900px;
-
 }
 .profile-box{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background:rgba(232, 219, 235, 0.043);
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(226, 112, 237);
+    box-shadow: 0 0 10px rgb(202, 37, 37);
     overflow: hidden;
     align-items: stretch;
-
 }
+
 .left-section{
     flex: 1;
-    max-width: 35%;
-    background: linear-gradient(135deg,rgb(109, 176, 238),rgb(47, 109, 224),rgb(1, 13, 22));
+    width: 35%;
+    background: linear-gradient(135deg,rgb(35, 178, 152),rgb(182, 123, 61),rgb(103, 187, 181));
     color: white;
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
-.profile-img img{
-    width: 150px;
+.profile img{
+    width: 140px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid white;
 
 }
 .role{
-    font-style: oblique;
+    font-style: italic;
     margin-bottom: 15px;
     margin-top: 5px;
 }
-.social-media{
-    margin-top: 15px;
+
+h3{
+    margin-top: 20px;
 }
+
 .social-media{
     display: inline-block;
-    color: aquamarine;
+    color: rgb(32, 140, 176);
     margin: 5px;
     font-size: 14px;
-    justify-content: center;
+    text-decoration: none;
 }
+
 .right-section{
     flex: 2;
-    background: palevioletred;
-    display: flex;
     padding: 20px;
-    flex-direction: row;
+    background: rgb(19, 145, 161);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+
 p{
     margin-bottom: 10px;
-
 }
-.skills{
+
+.skill{
     margin-bottom: 15px;
 }
 .progress{
     height: 8px;
     width: 100%;
-    background-color: rgb(242, 193, 183);
+    background: rgb(9, 9, 9);
     border-radius: 5px;
     overflow: hidden;
 }
 .progress div{
     height: 100%;
-    background: rgb(10, 6, 6);
+    background: rgb(243, 240, 240);
 
 }
 ul{
@@ -97,12 +98,12 @@ ul{
 li{
     margin-bottom: 5px;
 }
-/* Responsive Design */
-@media (max-width:768px){
-    .profile-box{
-        flex-direction: column;
+/responsive design/
+@media(max-widtth: 768px) {
+    .profile-box {
+           flex-direction: column;
     }
-    .left-section, .right-section{
+    .left-section, .right-section {
         max-width: 100%;
         width: 100%;
         text-align: center;
